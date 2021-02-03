@@ -28,6 +28,34 @@ class _HomeState extends State<Home> {
           )
         ]
       ),
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Icon(Icons.person_outline, size: 120.0, color: Colors.blue[600]),
+          Container(
+            child: TextField(keyboardType: TextInputType.number, decoration: InputDecoration(
+              labelText: "Peso em KG",
+              labelStyle: TextStyle(color: Colors.blue[600])
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.blue[600], fontSize: 25)
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 10)
+          ),
+          Container(
+            child: TextField(keyboardType: TextInputType.number, decoration: InputDecoration(
+              labelText: "Peso em KG",
+              labelStyle: TextStyle(color: Colors.blue[600])
+            ),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.blue[600], fontSize: 25)
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 10)
+          )
+        ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+      ),
     );
   }
 }
